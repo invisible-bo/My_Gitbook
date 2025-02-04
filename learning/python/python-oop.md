@@ -222,6 +222,18 @@ class Car:
         # ✅ 상태 출력
 ```
 
+***
+
+```python
+(self.__class__.__name__, "myprint()")
+```
+
+### super().**init**(name)
+
+* 자식 클래스에서 부모 클래스의 생성자를 실행
+
+
+
 
 
 
