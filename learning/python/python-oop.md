@@ -180,9 +180,47 @@ print(cat.speak())  # Kitty says Meow!
    부모 클래스나 인터페이스로 작업하면, 객체가 어떤 하위 클래스인지 몰라도 동일한 방식으로 \
    사용할 수 있다
 
+***
 
+### Class 예제
 
+```
+문제: Car 클래스 만들기
+자동차(Car) 클래스를 만들어보자.
 
+요구사항
+Car 클래스는 세 개의 속성을 가져야 한다.
+brand: 자동차 브랜드 (예: "Tesla")
+model: 자동차 모델명 (예: "Model S")
+speed: 현재 속도 (초기값 0)
+accelerate(amount) 메서드를 만들어, amount 만큼 속도를 증가시킨다.
+brake(amount) 메서드를 만들어, amount 만큼 속도를 감소시킨다.
+단, 속도가 0보다 작아질 수 없도록 처리해야 한다.
+status() 메서드를 만들어, 현재 자동차 상태를 출력한다.
+출력 형식: "Tesla Model S의 현재 속도: 50km/h"
+```
+
+```python
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+        self.speed = 0  # ✅ 속도의 초기값을 0으로 설정
+
+    def accelerate(self, amount):
+        self.speed += amount  # ✅ 속도 증가
+        print(f"{self.brand} {self.model}의 속도가 {self.speed}km/h로 증가!")
+
+    def brake(self, amount):
+        self.speed -= amount  # ✅ 속도 감소
+        if self.speed < 0:
+            self.speed = 0  # ✅ 속도가 0보다 작아지지 않도록 처리
+        print(f"{self.brand} {self.model}의 속도가 {self.speed}km/h로 감소!")
+
+    def status(self):
+        print(f"{self.brand} {self.model}의 현재 속도: {self.speed}km/h")  
+        # ✅ 상태 출력
+```
 
 
 
