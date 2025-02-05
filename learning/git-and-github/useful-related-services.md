@@ -1,9 +1,9 @@
 ---
 description: 유용한 연관 서비스
-icon: github
+icon: exclamation
 ---
 
-# git useful
+# Useful related services
 
 ### gitignore.io
 
