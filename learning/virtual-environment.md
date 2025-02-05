@@ -1,37 +1,63 @@
 ---
-description: 가상 환경
 icon: vr-cardboard
 ---
 
-# Virtual Environment
+# Package & Virtual Environment
+
+### Virtual Environment
 
 
 
-```python
-python -m venv venv
-# Creating Virtual Environment
-
-source venv/Scripts/activate
-# Activate Virtual Environment(Windows에서)
-
-source venv/bin/activate
-# Activate Virtual Environment(MacOS)
-
-deactivate
-# deactivate Virtual Environment
-```
-
-#### pip
+in Python
 
 ```bash
+# Creating Virtual Environment
+python -m venv {name}
+
+# Activate Virtual Environment # Windows
+source {name}/Scripts/activate
+
+# Activate Virtual Environment # MacOS
+source {name}/bin/activate
+
+
+deactivate
+```
+
+in Conda
+
+```bash
+# Creating Virtual Environment
+conda create --name {name}
+
+# Activate Virtual Environment
+conda activate {name}
+
+# deactivate Virtual Environment
+conda deactivate
+```
+
+***
+
+### Package
+
+* 여러 module들을 묶어 놓은 하나의 directory
+* ex) pandas, numpy, Django, pytorch etc...
+
+
+
+`PIP` : Python package 관리
+
+```bash
+pip install {package name}
+pip install {package name}=={version number}
+
+# pip 목록과 version 확인
 pip list
-pip install
 ```
 
 {% hint style="info" %}
 패키지 설치 목록을 저장하고 나중에 동일한 환경을 복원
-
-
 
 가상환경에서 사용 중인 패키지들을 `requirements.txt` 파일로 추출
 
