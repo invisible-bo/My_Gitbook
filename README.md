@@ -1,5 +1,4 @@
 ---
-noIndex: true
 icon: wreath-laurel
 cover: .gitbook/assets/brain.jpeg
 coverY: 0
@@ -16,7 +15,7 @@ layout:
   outline:
     visible: true
   pagination:
-    visible: false
+    visible: true
 ---
 
 # Learning
