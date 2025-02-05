@@ -13,7 +13,7 @@ customer_df = pd.read_csv('Mall_Customers.csv')
 print(customer_df)
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ```
 Annual Income (k$)
@@ -189,7 +189,7 @@ plt.show()                                  # 그래프 출력
 # 그래프에서 "엘보"(급격한 감소가 완화되는 지점)를 찾아 최적의 클러스터 수를 결정     
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (13).png" alt=""><figcaption><p><em><strong>3~5사이에 감소율이 크게 완화.</strong></em><strong> "팔꿈치" 모양 : elbow point 3개의 클러스터로 설정하고 data cluste</strong><mark style="color:blue;background-color:yellow;"><strong>ring 시도</strong></mark></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption><p><em><strong>3~5사이에 감소율이 크게 완화.</strong></em><strong> "팔꿈치" 모양 : elbow point 3개의 클러스터로 설정하고 data cluste</strong><mark style="color:blue;background-color:yellow;"><strong>ring 시도</strong></mark></p></figcaption></figure>
 
 ```python
 # K-Means 클러스터링
@@ -219,7 +219,7 @@ plt.legend(title='Cluster') # 범례 제목을 Cluster로 설정
 plt.show() # 그래프를 출력
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ```
 3개의 클러스터 시각화 결과
@@ -311,7 +311,7 @@ plt.legend(title='Cluster') # 범례 제목을 Cluster로 설정
 plt.show() # 그래프를 출력
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ```
 5개의 클러스터 시각화 결과
@@ -385,7 +385,7 @@ plt.ylabel('Distance')
 plt.show()
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 #### **덴드로그램의 구성**
@@ -443,7 +443,7 @@ plt.legend(title='Cluster')
 plt.show()
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ```python
 # 계층적 군집화 결과에 대한 실루엣 점수 계산
@@ -503,7 +503,7 @@ plt.show()
 # DBSCAN결과 시각화
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 ```python
 from sklearn.metrics import silhouette_score

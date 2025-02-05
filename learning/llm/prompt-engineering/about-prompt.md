@@ -65,11 +65,3 @@ CoT(Chain of Thought, 생각의사슬)
 
 
 
-
-
-
-
-
-
-
-

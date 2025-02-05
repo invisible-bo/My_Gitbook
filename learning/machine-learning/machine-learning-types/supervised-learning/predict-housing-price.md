@@ -439,7 +439,7 @@ medv_corr = corr_matrix['MEDV'].sort_values(ascending=False)
 print("MEDV와의 상관관계:\n", medv_corr)
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (24).png" alt=""><figcaption><p>MEDV와의 상관관계: MEDV 1.000000 RM 0.695360 ZN 0.373136 DIS 0.249929 CRIM -0.391363 AGE -0.394656 NOX -0.427321 TAX -0.468536 INDUS -0.481772 PTRATIO -0.507787 LSTAT -0.735822 Name: MEDV, dtype: float64</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption><p>MEDV와의 상관관계: MEDV 1.000000 RM 0.695360 ZN 0.373136 DIS 0.249929 CRIM -0.391363 AGE -0.394656 NOX -0.427321 TAX -0.468536 INDUS -0.481772 PTRATIO -0.507787 LSTAT -0.735822 Name: MEDV, dtype: float64</p></figcaption></figure>
 
 ```
 특징 선택
@@ -747,7 +747,7 @@ plt.grid(True)
 plt.show()
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 2. 의사결정나무&#x20;
 
@@ -768,7 +768,7 @@ plt.show()
 
 </code></pre>
 
-<figure><img src="../../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 ```python
 from sklearn.tree import export_text # 의사결정나무텍스트기반 시각화
@@ -799,4 +799,4 @@ plt.title('Feature Importances from Random Forest')
 plt.show()
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>

@@ -101,7 +101,7 @@ print(scaled_df.head())
 
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ### 전체 DataFrame에 적용
 
