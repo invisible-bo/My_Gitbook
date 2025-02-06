@@ -1,6 +1,6 @@
 ---
-description: How to stacommit git
 icon: github
+description: How to stacommit git
 ---
 
 # Git basic
@@ -170,5 +170,15 @@ git config --global user.email "user email"
 ```
 {% endhint %}
 
+***
 
+### Cancel commit
+
+| 상황                                 | 해결 방법                          |
+| ---------------------------------- | ------------------------------ |
+| **커밋만 취소 (파일은 그대로)**               | `git reset --soft HEAD~1`      |
+| **커밋 + git add 취소 (파일 변경 내용은 남김)** | `git reset HEAD~1`             |
+| **커밋 + 파일 변경 내용까지 삭제**             | `git reset --hard HEAD~1`      |
+| **특정 파일만 커밋에서 취소**                 | `git reset HEAD~1 파일이름`        |
+| **원격 저장소에서도 취소 (강제 푸시)**           | `git push origin main --force` |
 
