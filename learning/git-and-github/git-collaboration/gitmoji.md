@@ -43,25 +43,23 @@ npm install -g gitmoji-cli
 
 ```bash
 gitmoji -c
-# 커밋 단계에서 입력
+# commit 단계에서 입력
 ```
 
-* 실행하면 **이모지 선택 화면**이 나오고, 커밋 메시지를 입력하면 자동으로 적용
+* 실행하면 **이모지 선택 화면**이 나오고, commit 메시지를 입력하면 자동으로 적용
 
 <div align="left"><figure><img src="../../../.gitbook/assets/image.png" alt="" width="401"><figcaption></figcaption></figure></div>
 
 
 
-
-
-4. Gitmoji를 `git commit` 명령어에 자동 연결(선택사항)
+4. Gitmoji를 `git commit` 명령어에 자동 연결(선택 사항)
 
 ```bash
 gitmoji --init # 자동실행
 gitmoji --remove # 자동실행 해제
 ```
 
-* 이제 `git commit`을 실행하면 자동으로 Gitmoji 선택창이 뜸
+* 이제 `git commit`을 실행하면 자동으로 Gitmoji 선택 창이 뜸
 
 
 
