@@ -1,3 +1,7 @@
+---
+icon: hammer
+---
+
 # Usefull Pips & Modules
 
 ## Pygame
