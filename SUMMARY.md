@@ -57,6 +57,7 @@
     * [DRF Single Model CRUD](learning/django-drf/drf-single-model-crud.md)
     * [DRF Class Based View](learning/django-drf/drf-class-based-view.md)
     * [Relationship & DRF](learning/django-drf/relationship-and-drf.md)
+    * [API Documentation](learning/django-drf/api-documentation.md)
   * [Git & Github](learning/git-and-github/README.md)
     * [Marksdown](learning/git-and-github/marksdown.md)
     * [Linux basic commands](learning/git-and-github/linux-basic-commands.md)
