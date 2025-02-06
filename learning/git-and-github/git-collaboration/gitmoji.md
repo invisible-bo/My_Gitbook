@@ -12,15 +12,15 @@ brew install node
 
 * `Homebrew`가 없으면&#x20;
 
-\[여기] ([https://brew.sh/](https://brew.sh/)) &#x20;
+[homebrew](https://brew.sh/)
+
+
 
 
 
 Windows:
 
-공식 사이트에서&#x20;
-
-\[**LTS 버전 다운로드]\(**[**https://nodejs.org/ko**](https://nodejs.org/ko)**)**
+[LTS 버전 다운로드](https://nodejs.org/ko)
 
 설치 후 `cmd` 또는 `PowerShell`에서 확인
 
