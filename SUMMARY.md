@@ -13,6 +13,7 @@
     * [Python OOP](learning/python/python-oop.md)
     * [PEP 8 Style](learning/python/pep-8-style.md)
     * [Usefull Pips & Modules](learning/python/usefull-pips-and-modules.md)
+    * [Streamlit](learning/python/streamlit.md)
     * [\*Code kate](learning/python/code-kate.md)
   * [AI](learning/ai/README.md)
     * [Machine learning](learning/machine-learning/README.md)
