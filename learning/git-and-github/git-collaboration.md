@@ -23,7 +23,7 @@ git clone <repository_url>
 * **Branch 사용**: 각 팀원은 자신의 작업을 위해 **새 branch** 를 생성한다
 
 ```bash
-git checkout -c feature/<작업_내용>
+git switch -c {branch name}
 ```
 
 * **코드 작성**: 각자 자신이 맡은 기능이나 버그 수정 작업을 진행하고, 변경 내용을 commit한다
@@ -40,7 +40,7 @@ git commit -m "Add login feature"
 * 작업이 끝난 팀원은 자신의 브랜치를 원격 저장소로 push한다
 
 ```bash
-git push origin feature/<작업_내용>
+git push origin {branch name}
 ```
 
 * **Pull Request(PR) 생성**: GitHub이나 GitLab에서 PR을 만들어 코드 리뷰를 요청한다
@@ -64,10 +64,17 @@ git push origin main
 * 만약 A와 B가 같은 파일을 수정했다면 **Merge Conflict**가 발생할 수 있다. 이때, 충돌(conflict)을 해결하고 다시 병합한다
 
 ```bash
-git merge feature/<작업_내용>
-# 충돌 해결 후
-git add <수정된_파일>
-git commit -m "Resolve merge conflict"
+conflict 발생한 경우 머지할 브랜치(main) 코드 가져오기
+git checkout {branch name} # 이미 해당 브랜치에 있으면 입력 안해도 상관 없음
+git pull origin main # main or master 
+```
+
+* conflict 발생한 부분 코드 수정
+
+```bash
+git add .
+git commit -m ""
+git push
 ```
 
 ***
