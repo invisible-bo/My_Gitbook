@@ -9,14 +9,14 @@
 ### 앱 내부 구조의 권장 규칙
 
 ```
-articles/
+app_name/
 ├── templates/
-│   └── articles/
+│   └── app_name/
 │       └── index.html
 ```
 
 * **앱 간의 템플릿 이름 충돌**을 방지하기 위해서
-  * views.py에서 articles/index.html로 위치를 명시해주어야 함
+  * `views.py`에서 `app_name/index.html`로 위치를 명시해주어야 함
 
 ```python
 from django.shortcuts import render

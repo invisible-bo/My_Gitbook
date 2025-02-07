@@ -1,4 +1,4 @@
-# App
+# APP
 
 ### Django App
 
@@ -25,7 +25,7 @@ python manage.py startapp {app name} # app의 이름은 복수형 권장
 * settings.py로 이동
 * INSTALLED\_APPS에 생성한 App 이름등록 + '트레일링 콤마'
 
-
+***
 
 ### App 살펴보기
 
