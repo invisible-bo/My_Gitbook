@@ -33,22 +33,70 @@ def index(request):
   * (주의) **PYTHON이 동작하는 것이 아님!!**
 * 데이터를 표현하기 위한 방법
 * DTL문법
-  * **변수 (Variable)**
-    * **\{{ variable \}}**
-  * 필터 (Filters)
-    * \{{ variable|filter \}}
-    * 변수에 작업을 추가적으로 더해 수정하고 싶을때 사용
-  * **태그 (Tags)**
-    * **\{% tag %\}**
-    * 반복 또는 논리를 수행하여 제어 흐름을 만들거나 특수한 기능을 수행
-    * ex) \{% if \~ %\} \
-      &#x20;      \{% endif %\}
-  * 주석 (Comments)
-    * {# 한줄주석#}
-    * \{%  comment %\}\
-      여러줄\
-      주석\
-      \{% endcomment %\}
+
+1. **변수, Variable**
+
+```python
+{{ variable }}
+```
+
+* 변수에 어떠한 작업을 추가적으로 더해 수정하고 싶을때 사용
+* `.` 을 사용하여 변수의 속성값에 접근 가능
+*   `render()` 의 세번째 인자인 context에 `dict` 형태로 넘겨진 데이터 중
+
+    `key` 값이 template에서 사용 가능한 변수가 됨
+
+
+
+2. 필터 (Filters)
+
+```python
+{{ variable|filter }}
+```
+
+* 변수에 작업을 추가적으로 더해 수정하고 싶을때 사용
+* 약 60개의 built-in template filter가 제공되며 일부 필터는 인자를 받기도 함
+* 필터 사용 예시
+  * view에서 넘겨준 데이터는 Aiden Lim 이런식이지만 보여줄때는 소문자로 보이게 하고 싶다면
+
+```python
+{{ first_name|lower }}
+```
+
+
+
+3. **태그 (Tags)**
+
+```python
+{% raw %}
+{% tag %}
+{% endraw %}
+```
+
+* 반복 또는 논리를 수행하여 제어 흐름을 만들거나 특수한 기능을 수행
+* 일부는 시작 태그와 종료 태그가 있음
+
+```python
+{% raw %}
+{% if ~ %}
+{% endif %}
+{% endraw %}
+```
+
+* 주석 (Comments)
+
+```python
+{# 한 줄 주석 #}
+
+{% raw %}
+{% comment %}
+ 여러줄
+ 주석
+{% endcomment %}
+{% endraw %}
+```
+
+
 
 <figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
