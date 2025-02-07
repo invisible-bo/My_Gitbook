@@ -49,6 +49,7 @@
       * [DRF Class Based View](learning/django/django-drf/drf-class-based-view.md)
       * [Relationship & DRF](learning/django/django-drf/relationship-and-drf.md)
       * [API Documentation](learning/django/django-drf/api-documentation.md)
+      * [Django Deploy with AWS](learning/django/django-drf/django-deploy-with-aws.md)
     * [Django development sequence](learning/django/django-development-sequence.md)
     * [MTV pattern](learning/django/mtv-pattern/README.md)
       * [Template](learning/django/mtv-pattern/template.md)

@@ -4,7 +4,7 @@ icon: spider-web
 
 # Web
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 A. 사용자 → 브라우저 (요청 시작)
 
@@ -49,4 +49,4 @@ B. 브라우저 → DNS (도메인 네임 시스템 요청)
 
 ***
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="322"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="322"><figcaption></figcaption></figure></div>
