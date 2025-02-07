@@ -23,23 +23,23 @@ MVC:
   * Controller : Model과 View를 연결하는 로직을 처리
   * 분리 이유: 관심사를 분리, 각 부분 독립적 개발 생산성 증가, 유지보수 쉬워
 
-### MTV(Django)
+### \*\*MTV(Django)\*\*
 
-* Model
+* **Model**
   * MVC에서의 Model
   * **데이터와 관련된 로직** 처리
     * 데이터 구조 정의, 데이터베이스 기록 관리
-* Template
+* **Template**
   * MVC에서의 View
   * **레이아웃**과 **화면**상의 로직을 처리
     * UI와 레이아웃
-* View
+* **View**
   * MVC에서의 Controller
   * **메인 비지니스 로직**을 담당(Model과 Template의  **중간을 연결**하는 역할)
 
 <div align="left"><figure><img src="../../../.gitbook/assets/image (56).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-Client로부터요청(request)이 들어오면
+Client로부터 요청(request)이 들어오면
 
 1. URL(urls.py) 에서 request를 받아서 어떤 view로 보낼지 처리
 2. View(views.py) 에서 요청을 받아 로직에 따라 data와 관련된 읽기나 쓰기가 필요하면\

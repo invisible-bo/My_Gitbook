@@ -4,7 +4,7 @@
 
 * 데이터를 보여주는 로직 작성
 * Template 기본 경로
-  * `app_name / templates`&#x20;
+  * `app_name / templates / app_name`&#x20;
 
 ### 앱 내부 구조의 권장 규칙
 

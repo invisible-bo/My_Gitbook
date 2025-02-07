@@ -152,6 +152,7 @@ urlpatterns = [
     path('example/', views.example_view, name='example'),
     path('example/create/', views.example_create, name='example_create'),  # 폼 추가
 ]
+# / = Trailing Slash. django에서 사용 권장
 ```
 
 * project\_name/urls.py
