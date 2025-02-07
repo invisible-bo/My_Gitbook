@@ -74,7 +74,7 @@ pip install psycopg2
 
       → dict 타입이 아닌 객체를 직렬화(Serialization)하기 위해서는 `False`로 설정해야함
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 **Serialization란?**

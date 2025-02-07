@@ -8,17 +8,17 @@ description: DRF를 사용해서 JSON을 응답하는 API를 설계하고 구현
 pip install djangorestframework
 ```
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (37).png" alt="" width="175"><figcaption><p>setting.py apps 등록</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (37).png" alt="" width="175"><figcaption><p>setting.py apps 등록</p></figcaption></figure></div>
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (38).png" alt="" width="350"><figcaption><p>app의 urls.py path등록</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (38).png" alt="" width="350"><figcaption><p>app의 urls.py path등록</p></figcaption></figure></div>
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (39).png" alt="" width="96"><figcaption><p>app마다 serializers.py 생성</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (39).png" alt="" width="96"><figcaption><p>app마다 serializers.py 생성</p></figcaption></figure></div>
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (40).png" alt="" width="303"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (40).png" alt="" width="303"><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (43).png" alt="" width="281"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (43).png" alt="" width="281"><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 ***
 

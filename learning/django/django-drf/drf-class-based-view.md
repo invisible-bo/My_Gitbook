@@ -38,19 +38,19 @@
 
 * APIView 사용
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (51).png" alt="" width="308"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (51).png" alt="" width="308"><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 block 후 전체 주석처리 = ctrl + /
 {% endhint %}
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (52).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (52).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (54).png" alt="" width="555"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (54).png" alt="" width="555"><figcaption></figcaption></figure></div>
 
 * FBV를 CBV로 변경
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (55).png" alt="" width="559"><figcaption><p>urls.py</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (55).png" alt="" width="559"><figcaption><p>urls.py</p></figcaption></figure></div>
 
 * CBV를 사용할 때는 참조하는 형식이 변경
 *   `as_view()`메서드를 사용해서 URL 패턴에 연결
