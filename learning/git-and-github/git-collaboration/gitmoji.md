@@ -1,3 +1,7 @@
+---
+icon: github
+---
+
 # Gitmoji
 
 gitmoji-cli
