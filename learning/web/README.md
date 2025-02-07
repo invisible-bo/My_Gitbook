@@ -47,14 +47,6 @@ B. 브라우저 → DNS (도메인 네임 시스템 요청)
 * 브라우저는 서버에서 받은 데이터를 해석하고, 사용자 화면에 **웹 페이지를 표시**함.
 * 사용자는 이제 인터페이스를 통해 결과를 확인하고, 추가 요청을 보낼 수 있음
 
+***
 
-
-
-
-
-
-
-
-
-
-<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="215"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="322"><figcaption></figcaption></figure></div>
