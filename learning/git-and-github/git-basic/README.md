@@ -156,9 +156,12 @@ code . # 해당 폴더에서 vscode로 open
 .gitignore
 # .gitignore안에 file and folder 작성
 # 반드시 레포지토리에 만들어 놓는것이 좋음
-
 gitignore.io
 
+venv/
+config.py
+.env
+etc....
 #한번 commit되면 .gitignore에 넣을 수 없음
 ```
 
