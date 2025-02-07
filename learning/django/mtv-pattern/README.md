@@ -37,16 +37,14 @@ MVC:
   * MVC에서의 Controller
   * **메인 비지니스 로직**을 담당(Model과 Template의  **중간을 연결**하는 역할)
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (56).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
+Client로부터요청(request)이 들어오면
 
-
-요청(request)이 들어오면
-
-1. URL(urls.py) 처리
-2. View(views.py) 처리
-3. Template(html) 처리
-4. 응답(Response) 전달
-
-
-
+1. URL(urls.py) 에서 request를 받아서 어떤 view로 보낼지 처리
+2. View(views.py) 에서 요청을 받아 로직에 따라 data와 관련된 읽기나 쓰기가 필요하면\
+   &#x20;Model에게 요청. Model이 처리해서 view에게 돌려줌.&#x20;
+3. Template(html) 처리\
+   view에서 다시 받아서 Template에게 data를 줄 수도 있고, data를 안주고\
+   Template에서 받아올 수도 있음. 화면과 관련된(HTML)것은 전부 Template이 처리
+4. 응답(Response) 전달\

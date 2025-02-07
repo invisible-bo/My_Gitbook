@@ -23,10 +23,14 @@ python manage.py startapp app_name
 ```python
 from django.db import models
 
-class ExampleModel(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
+# Create your models here.
+class MainMarket(models.Model):
+    market_ID = models.CharField(max_length=300, primary_key=True)
+    area = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
+    area_num = models.CharField(max_length=50)
+    open_date = models.DateField(auto_now_add=True)
+    worker_num = models.IntegerField()
 ```
 
 * 모델 작성 후 마이그레이션 파일 생성
@@ -41,7 +45,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-* `migrate` 명령어는 **Django에서 데이터베이스 테이블을 생성하거나 업데이트할 때 사용**된다.
+* `migrate` 명령어는 **Django에서 데이터 베이스 테이블을 생성하거나 업데이트할 때 사용**된다.
 * Django의 **모델을 변경**하거나 새로운 모델을 만들고 나면 **마이그레이션 파일을 생성하고 적용**해야 한다.
 
 ***
@@ -66,9 +70,44 @@ python manage.py createsuperuser
 
 ***
 
+4. 폼을 View에서 활용
+
+* `views.py` 에서 폼을 처리하는 로직 추가
+
+```python
+from django.shortcuts import render, redirect
+from .models import ExampleModel
+from .forms import ExampleForm
+
+def example_create(request):
+    if request.method == "POST":
+        form = ExampleForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('example')  # 데이터 저장 후 리디렉트
+    else:
+        form = ExampleForm()
+    return render(request, 'example_form.html', {'form': form})
+```
+
+* 폼을 HTML 템플릿에 렌더링
+  * `templates/app_name/example_form.html`에 폼을 렌더링하는 코드 작성
+
+```python
+<form method="post">
+    {% raw %}
+{% csrf_token %}
+{% endraw %}
+    {{ form.as_p }}
+    <button type="submit">저장</button>
+</form>
+```
+
+***
+
 4. 뷰(View) 작성
 
-* `views.py`에 로직 작성
+* `views.py`에 Form을 처리하는 로직 작성
 * 예: 특정 데이터를 가져오는 함수형 뷰
 
 ```python
@@ -111,6 +150,7 @@ from . import views
 
 urlpatterns = [
     path('example/', views.example_view, name='example'),
+    path('example/create/', views.example_create, name='example_create'),  # 폼 추가
 ]
 ```
 
