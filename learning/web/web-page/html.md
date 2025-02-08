@@ -1,6 +1,6 @@
 ---
-icon: html5
 description: HyperText Markup Language
+icon: html5
 ---
 
 # HTML
@@ -11,7 +11,7 @@ description: HyperText Markup Language
 * 여는 **tag**와 닫는 **tag**의 **한 쌍**
 * tag는 **중첩**될 수 있다
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (64).png" alt="" width="300"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (64).png" alt="" width="300"><figcaption></figcaption></figure></div>
 
 ### 1. HTML 기본구조
 
@@ -54,17 +54,20 @@ description: HyperText Markup Language
 * heading 제목 tag: 제목을 표시할 때 사용. 숫자가 작을수록 글자가 커짐
   * h1, h2, h3, h4, h5, h6
 * paragraph 문단 tag : 본문 텍스트를 작성할 때 사용. 하나의 문단으로 지정되어 화면에 보여짐
-  * p
+  * \<p>
 * break  줄 바꿈  tag : 혼자서 사용하는 **홀 태그.** **내용이 포함된것이 아님**
   * \<br> 혹은 \<br/> 홀로 쓰임
 * italic 기울임tag
-  * i
+  * \<i>
 * strong 강조 tag
-  * strong
+  * \<strong>
 * bold 굵게 tag
-  * b
+  * \<b>
 * :fire:Horizontal rule tag : 문서 내에 **가로 선**. **홀태그**
   * \<hr>
+* :fire:Title : 타이틀 태그
+  * \<title>
+    * 웹페이지 본문(body)에 표시되는 게 아니라, 브라우저 탭이나 검색 엔진에서만 보이는 요소
 
 | 태그         | 기본 스타일 | 의미(semantic) | 검색엔진(SEO)      | 스크린 리더    |
 | ---------- | ------ | ------------ | -------------- | --------- |
