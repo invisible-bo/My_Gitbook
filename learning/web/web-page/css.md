@@ -1,6 +1,6 @@
 ---
+icon: css3-alt
 description: Cascading Style Sheets
-icon: css3
 ---
 
 # CSS
