@@ -34,19 +34,29 @@ def index(request):
 * 데이터를 표현하기 위한 방법
 * DTL문법
 
+
+
 1. **변수, Variable**
 
 ```python
 {{ variable }}
 ```
 
-* 변수에 어떠한 작업을 추가적으로 더해 수정하고 싶을때 사용
-* `.` 을 사용하여 변수의 속성값에 접근 가능
+* **view의 context**로 넘긴 데이터를 변수로로 접근할 수 있음
+* 변수에 어떠한 작업을 추가적으로 더해 수정하고 싶을 때 사용
+* `.` 을 사용하여 변수의 속성 값에 접근 가능
 *   `render()` 의 세번째 인자인 context에 `dict` 형태로 넘겨진 데이터 중
 
     `key` 값이 template에서 사용 가능한 변수가 됨
 
+    * render(request, template, context)
 
+    \
+
+
+<div align="left"><figure><img src="../../../.gitbook/assets/image (61).png" alt="" width="341"><figcaption><p>context</p></figcaption></figure></div>
+
+<div align="left"><figure><img src="../../../.gitbook/assets/image (62).png" alt="" width="221"><figcaption><p>.으로 속성값에 접근</p></figcaption></figure></div>
 
 2. 필터 (Filters)
 
