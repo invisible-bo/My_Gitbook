@@ -49,7 +49,7 @@ description: HyperText Markup Language
 
 ### 2. HTML 태그
 
-### 글의 내용 정의 tag
+### Text 내용 정의 tag
 
 * heading 제목 tag: 제목을 표시할 때 사용. 숫자가 작을수록 글자가 커짐
   * h1, h2, h3, h4, h5, h6
@@ -65,4 +65,22 @@ description: HyperText Markup Language
   * b
 * :fire:Horizontal rule tag : 문서 내에 **가로 선**. **홀태그**
   * \<hr>
+
+| 태그         | 기본 스타일 | 의미(semantic) | 검색엔진(SEO)      | 스크린 리더    |
+| ---------- | ------ | ------------ | -------------- | --------- |
+| `<b>`      | 볼드체    | 없음 (단순 스타일)  | 영향 없음          | 그냥 굵게 읽음  |
+| `<strong>` | 볼드체    | 중요한 내용을 강조   | 중요한 키워드로 인식 가능 | 강한 강조로 읽음 |
+
+
+
+### List tag
+
+* 항목들을 구분해서 나열할때 사용하는 tags
+* Ordered list tag&#x20;
+  * ol
+    * 1, 2, 3
+* Unordered list tag
+  * ul
+* List item tag
+  * li
 
