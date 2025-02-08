@@ -1,13 +1,17 @@
 ---
-description: HyperText Markup Language
 icon: html5
+description: HyperText Markup Language
 ---
 
 # HTML
 
 ## HTML(Hyper Text Markup Language)
 
-* 웹 페이지의 구조를 정의하고 콘텐츠를 표시하는 데 사용되는 Markup Language
+* 웹 페이지의 구조를 정의하고 콘텐츠를 표시하는 데 사용되는 **Markup Language(마크업언어)**
+* 여는 **tag**와 닫는 **tag**의 **한 쌍**
+* tag는 **중첩**될 수 있다
+
+<div align="left"><figure><img src="../../../.gitbook/assets/image (64).png" alt="" width="300"><figcaption></figcaption></figure></div>
 
 ### 1. HTML 기본구조
 
@@ -28,156 +32,37 @@ icon: html5
 
 * `<!DOCTYPE html>`: HTML5 문서를 선언.
 * `<html>`: HTML 문서의 루트 요소.
-* `<head>`: 문서 정보를 포함(메타데이터, 제목 등).
-* `<body>`: 화면에 표시될 콘텐츠를 포함.
+* `<head>`: 문서 정보를 포함(메타 데이터, 제목 등).
+* `<body>`: 화면에 표시될 콘텐츠를 포함. 실제 사용자에게 보여질 화면을 구현
+
+코드 편집 프로그램(HTML기반 editor)
+
+[Sublime Text 3](https://www.sublimetext.com/3)     &#x20;
+
+
+
+:fire::fire::fire:크롬 개발자 도구
+
+* Ctrl + Shift + I
 
 ***
 
 ### 2. HTML 태그
 
+### 글의 내용 정의 tag
 
-
-* 제목 태그 : 제목을 표시할 때 사용. 숫자가 작을수록 글자가 커짐
-
-```html
-<h1>제목 1</h1>
-<h2>제목 2</h2>
-<h3>제목 3</h3>
-```
-
-
-
-* 문단 태그 : 본문 텍스트를 작성할 때 사용
-
-```html
-<p>이 문장은 문단 안에 작성된 텍스트입니다.</p>
-```
-
-
-
-* 링크 태그 : 다른 페이지나 URL로 이동하는 링크를 생성
-
-```html
-<a href="https://example.com">여기로 이동</a>
-```
-
-
-
-* 이미지 태그 : 이미지를 삽입할 때 사용. 닫는 태그가 필요 없고, `src` 속성으로 이미지 경로를 지정
-
-```html
-<img src="image.jpg" alt="이미지 설명" width="300">
-```
-
-
-
-* 목록 태그 : 순서 없는 목록
-
-```html
-<ul>
-    <li>항목 1</li>
-    <li>항목 2</li>
-</ul>
-```
-
-
-
-* 목록 태그 : 순서 있는 목록
-
-```html
-<ol>
-    <li>첫 번째</li>
-    <li>두 번째</li>
-</ol>
-```
-
-
-
-* 버튼 태그 : 버튼을 만들 때 사용
-
-```html
-<button>클릭하세요</button>
-```
-
-
-
-* 주석
-
-```html
-<!-- 이 부분은 주석입니다. -->
-```
-
-***
-
-### 3. HTML 속성
-
-* HTML 태그에 추가적인 정보를 제공. 주요 속성 예:
-
-
-
-* `id`: 요소의 고유 식별자
-
-```html
-<p id="unique">이 문단은 고유 ID를 가집니다.</p>
-```
-
-
-
-* `class`: 여러 요소에 공통 스타일 적용.
-
-```
-<p class="highlight">스타일 적용 문단</p>
-```
-
-
-
-* `style`: 인라인 스타일
-
-```html
-<p style="color: red;">빨간색 문장</p>
-```
-
-***
-
-### 4. HTML 폼 태그
-
-* 사용자 입력을 받을 때 사용
-
-```html
-<form action="/submit" method="post">
-    <label for="name">이름:</label>
-    <input type="text" id="name" name="name">
-    <input type="submit" value="제출">
-</form>
-```
-
-***
-
-### 5. HTML 문법 규칙
-
-1. 모든 태그는 열고 닫아야함
-
-```html
-<p>문장</p>
-```
-
-* (단, `<img>`, `<input>` 같은 **빈 태그**는 예외.)
-
-
-
-2. 속성 값은 큰따옴표(`"`)로 묶어야 함
-
-```html
-<a href="https://example.com">링크</a>
-```
-
-
-
-3. 중첩된 태그는 닫는 순서를 지켜야 함
-
-```
-<div>
-    <p>중첩된 태그</p>
-</div>
-```
+* heading 제목 tag: 제목을 표시할 때 사용. 숫자가 작을수록 글자가 커짐
+  * h1, h2, h3, h4, h5, h6
+* paragraph 문단 tag : 본문 텍스트를 작성할 때 사용. 하나의 문단으로 지정되어 화면에 보여짐
+  * p
+* break  줄 바꿈  tag : 혼자서 사용하는 **홀 태그.** **내용이 포함된것이 아님**
+  * \<br> 혹은 \<br/> 홀로 쓰임
+* italic 기울임tag
+  * i
+* strong 강조 tag
+  * strong
+* bold 굵게 tag
+  * b
+* :fire:Horizontal rule tag : 문서 내에 **가로 선**. **홀태그**
+  * \<hr>
 

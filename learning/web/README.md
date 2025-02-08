@@ -88,7 +88,7 @@ ex) Google server(Server) - 웹 브라우저(Client)
 
 ***
 
-Web 개발의 구성
+### Web 개발의 구성
 
 ### Frontend & Backend
 
