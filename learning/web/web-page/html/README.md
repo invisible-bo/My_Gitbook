@@ -11,7 +11,7 @@ description: HyperText Markup Language
 * 여는 **tag**와 닫는 **tag**의 **한 쌍**
 * tag는 **중첩**될 수 있다
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (64).png" alt="" width="300"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (64).png" alt="" width="300"><figcaption></figcaption></figure></div>
 
 ### 1. HTML 기본구조
 
@@ -83,4 +83,6 @@ description: HyperText Markup Language
   * ul
 * List item tag
   * li
+
+
 
