@@ -40,6 +40,7 @@
         * [Block & Inline](learning/web/web-page/html/block-and-inline.md)
         * [HyperMedia](learning/web/web-page/html/hypermedia.md)
         * [Tags](learning/web/web-page/html/tags/README.md)
+          * [Section & div](learning/web/web-page/html/tags/section-and-div.md)
           * [Table](learning/web/web-page/html/tags/table.md)
           * [Form](learning/web/web-page/html/tags/form.md)
           * [Meta](learning/web/web-page/html/tags/meta.md)
