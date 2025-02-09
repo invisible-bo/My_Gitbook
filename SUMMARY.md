@@ -48,6 +48,7 @@
         * [Text Style](learning/web/web-page/css/text-style.md)
         * [CSS selector](learning/web/web-page/css/css-selector.md)
         * [Block & Spacing](learning/web/web-page/css/block-and-spacing.md)
+        * [Positioning Rules](learning/web/web-page/css/positioning-rules.md)
       * [JavaScript](learning/web/web-page/javascript.md)
       * [UX / UI](learning/web/web-page/ux-ui.md)
     * [Streamlit](learning/web/streamlit.md)
