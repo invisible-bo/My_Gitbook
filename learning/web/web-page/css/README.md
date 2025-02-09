@@ -9,9 +9,11 @@ description: Cascading Style Sheets
 
 * HTML은 웹 페이지의 **구조**(텍스트, 이미지 등)를 정의
 * CSS는 이 구조를 **어떻게 보일지**를 지정
-* HTML 요소의 스타일과 레이아웃을 정의하는 스타일 시트 언어
+* HTML 코드로 작성된 web요소들의 스타일과 레이아웃을 정의하는 style sheet언어
 
-***
+<div align="left"><figure><img src="../../../../.gitbook/assets/image.png" alt="" width="286"><figcaption></figcaption></figure></div>
+
+* 속성을 여러 개 지정 가능
 
 ### CSS의 역할
 
@@ -84,8 +86,16 @@ h1 {
 </html>
 ```
 
-2. **외부 CSS 파일**:
-   * CSS 파일을 별도로 만들어 HTML에서 링크
+| 태그                       | 역할                                            |
+| ------------------------ | --------------------------------------------- |
+| `<html lang="ko">`       | 문서의 기본 언어를 한국어(ko)로 설정 (SEO, 음성 리더, 번역 기능 영향) |
+| `<meta charset="UTF-8">` | 문자의 인코딩 방식을 UTF-8로 설정 (한글, 특수문자 깨짐 방지)        |
+
+
+
+2. **외부 CSS 파일:**
+
+* CSS 파일을 별도로 만들어 HTML에서 링크
 
 **CSS 파일(`style.css`)**:
 
@@ -114,14 +124,22 @@ h1 {
 </html>
 ```
 
-3. **인라인 스타일**:
-   * HTML 태그에 직접 CSS를 작성 (**비추천**: 유지보수가 어려움).
+3. **inline스타일**:
+   * HTML 태그에 직접 CSS를 작성 (**비추천**: **유지 보수가 어려움)**
 
 ```html
 <h1 style="color: navy;">CSS 테스트</h1>
 ```
 
 ***
+
+### 주석쓰기
+
+```html
+/* 주석내용 */
+```
+
+###
 
 ### CSS가 중요한 이유
 
@@ -132,7 +150,10 @@ h1 {
 3. **사용자 경험 개선**:
    * 반응형 디자인과 시각적 효과로 웹사이트가 더 아름답고 사용하기 편리해짐
 
+***
 
+ex)
 
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (77).png" alt="" width="563"><figcaption><p>외부 css를 html 내부에 적용</p></figcaption></figure></div>
 
-
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (78).png" alt="" width="341"><figcaption><p>basic css example</p></figcaption></figure></div>

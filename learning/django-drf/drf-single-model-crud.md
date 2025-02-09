@@ -17,7 +17,7 @@ description: DRF를 사용하여 단일 Model의 CRUD구현
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="420"><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="441"><figcaption><p>urls.py 작성 이후 views 작성</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" width="441"><figcaption><p>urls.py 작성 이후 views 작성</p></figcaption></figure></div>
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="410"><figcaption><p>views.py</p></figcaption></figure></div>
 
