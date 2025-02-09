@@ -25,7 +25,7 @@ description: form tag
 
 ### input tag
 
-* **empty tag**. 홀태그&#x20;
+* void element: 홀태그&#x20;
 * type: 입력 형태. text, password, button, submit, radio, checkbox etc
 * name: 입력값의 name
 * value: 입력상자의 값
