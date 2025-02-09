@@ -16,5 +16,5 @@
 
 ### embed tag
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="279"><figcaption><p>외부 콘텐츠 삽입 ex)youtube, flash</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt="" width="279"><figcaption><p>외부 콘텐츠 삽입 ex)youtube, flash</p></figcaption></figure></div>
 

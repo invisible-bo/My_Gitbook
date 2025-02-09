@@ -1,6 +1,6 @@
 ---
-icon: css3-alt
 description: Cascading Style Sheets
+icon: css3-alt
 ---
 
 # CSS
@@ -11,7 +11,7 @@ description: Cascading Style Sheets
 * CSS는 이 구조를 **어떻게 보일지**를 지정
 * HTML 코드로 작성된 web요소들의 스타일과 레이아웃을 정의하는 style sheet언어
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image.png" alt="" width="286"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (2).png" alt="" width="286"><figcaption></figcaption></figure></div>
 
 * 속성을 여러 개 지정 가능
 
@@ -154,6 +154,6 @@ h1 {
 
 ex)
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (77).png" alt="" width="563"><figcaption><p>외부 css를 html 내부에 적용</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (77).png" alt="" width="563"><figcaption><p>외부 css를 html 내부에 적용</p></figcaption></figure></div>
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (78).png" alt="" width="341"><figcaption><p>basic css example</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (78).png" alt="" width="341"><figcaption><p>basic css example</p></figcaption></figure></div>

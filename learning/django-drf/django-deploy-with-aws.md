@@ -64,12 +64,12 @@ sign up
 
 * Remote host : AWS의 퍼블릭 DNS 입력
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="373"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="" width="373"><figcaption></figcaption></figure></div>
 
 * Specify username 체크 후 `ubuntu` 입력
 * Advanced SSH settings 선택후 이전에 생성했던 `.pem` 파일 선택
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (3) (1).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (4) (1).png" alt="" width="563"><figcaption><p>AWS에서 임대한 EC2 인스턴스에 접속했다</p></figcaption></figure></div>
 
