@@ -13,7 +13,7 @@ description: form tag
   * label : 입력 상자 마다 제목을 붙이는 tag
   * button : button tag
 
-<div align="left"><figure><img src="../../../../../.gitbook/assets/image (3).png" alt="" width="563"><figcaption><p>있음 없음 부분 radio</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (3).png" alt="" width="563"><figcaption><p>있음 없음 부분 radio</p></figcaption></figure></div>
 
 주요 속성
 
@@ -74,36 +74,36 @@ checkbox - 중첩 선택 가능&#x20;
 
 * text, password
 
-<div align="left"><figure><img src="../../../../../.gitbook/assets/image (66).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (66).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 * button, submit
 
-<div align="left"><figure><img src="../../../../../.gitbook/assets/image (67).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (67).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 * radio, check box
 
-<div align="left"><figure><img src="../../../../../.gitbook/assets/image (68).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (68).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 * select
 
-<div align="left"><figure><img src="../../../../../.gitbook/assets/image (69).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (69).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 * textarea
 * 두 줄 이상의 긴 글을 입력받도록 해주는 입력 칸
 * **textarea 내부의 컨텐츠는 줄바꿈을 인식함**
 
-<div align="left"><figure><img src="../../../../../.gitbook/assets/image (70).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (70).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 * label
 * user에게 각 입력 칸을 설명해주는 label을 표시
 * input 태그에 id 속성으로 지정된 값을 for 속성으로 넣어주면 그 input 태그를 수식
 
-<div align="left"><figure><img src="../../../../../.gitbook/assets/image (71).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (71).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 * fieldset, legend
 * 여러 입력 태그를 하나의 그룹으로 묶고 원하는 제목으로 grouping&#x20;
 
-<div align="left"><figure><img src="../../../../../.gitbook/assets/image (72).png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (72).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 
 
