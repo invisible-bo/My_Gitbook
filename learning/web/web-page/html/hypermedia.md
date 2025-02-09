@@ -8,11 +8,11 @@
 
 ### a(anchor) tag
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption><p>href = hyper reference</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption><p>href = hyper reference</p></figcaption></figure></div>
 
 ### img(image) tag
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption><p>src = source. empty tag</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>src = source. empty tag</p></figcaption></figure></div>
 
 ### embed tag
 
