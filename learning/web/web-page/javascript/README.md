@@ -5,7 +5,7 @@ description: object(객체) 기반의 script 언어. web문서에서 사용자�
 
 # JavaScript
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 1. web page에 동적인 요소 추가
 
