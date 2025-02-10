@@ -4,20 +4,7 @@ icon: docker
 
 # Docker
 
+<div align="left"><figure><img src="../.gitbook/assets/image (80).png" alt="" width="142"><figcaption></figcaption></figure></div>
 
 
 
-
-Docker file 작성
-
-코드
-
-명령이 들어있는 설계도
-
-
-
-Image 빌드
-
-
-
-Container 실행
