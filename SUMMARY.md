@@ -97,4 +97,5 @@
     * [SQL](learning/database/sql/README.md)
       * [PostgreSQL](learning/database/sql/postgresql.md)
   * [Virtual Environment & Package](learning/virtual-environment.md)
+  * [Pyenv](learning/pyenv.md)
   * [Backend-Frontend Collaboration](learning/backend-frontend-collaboration.md)
