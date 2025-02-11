@@ -31,6 +31,12 @@ icon: docker
 
 ### Dockerfile 기본 구조
 
+
+
+* Dockerfile 생성
+
+<div align="left"><figure><img src="../.gitbook/assets/image (82).png" alt="" width="154"><figcaption></figcaption></figure></div>
+
 ```docker
 # 베이스 이미지 설정
 FROM python:3.8-slim
