@@ -318,9 +318,180 @@ volumes:
 docker compose up
 ```
 
+***
+
+### Docker를 이용한 collaboration
+
+1. Dockerfile + docker-compose.yml을 Git에 올리기
+
+* team repo dir ex)
+
+```sh
+project-repo/
+│── Dockerfile
+│── docker-compose.yml
+│── your-django-project/
+│── .gitignore
+```
+
+* team member image build
+
+```sh
+git pull
+docker-compose up --build -d  # Dockerfile 기반으로 직접 빌드 후 실행
+
+```
 
 
 
+2. Docker Hub 또는 사설 Registry에 푸시해서 공유
+
+* image build후 Docker Hub에 push
+
+```sh
+docker build -t your-dockerhub-username/django-app .
+docker push your-dockerhub-username/django-app
+```
+
+* team member image build
+
+```sh
+docker pull your-dockerhub-username/django-app
+docker-compose up -d
+```
+
+{% hint style="info" %}
+Docker Hub에는 `docker-compose.yml`이 푸시되지 않는다
+
+Docker Hub는 오직 Docker Image만 저장하는 곳
+
+`docker-compose.yml`은 Docker Hub가 아니라, **Git 레포지토리에 올려야 한다**
+{% endhint %}
+
+```sh
+git add docker-compose.yml
+git commit -m "Add docker-compose.yml"
+git push origin main
+```
 
 
 
+### PostgresSQL로 미리 변경하는 방법
+
+:fire:Django 환경을 Docker Image로 만들기 전에 미리 DB 설정을 PostgreSQL로 변경하는 게 훨씬 편하다
+
+1. Django `settings.py`에서 PostgreSQL로 변경
+2. PostgreSQL이 설치된 상태에서 로컬 테스트
+3. Dockerfile과 `docker-compose.yml`을 PostgreSQL 기준으로 작성
+4. Docker Image 빌드 후 팀원들과 공유
+
+
+
+1. `settings.py`에서 PostgreSQL로 변경
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydatabase',
+        'USER': 'myuser',
+        'PASSWORD': 'mypassword',
+        'HOST': 'db',  # Docker Compose에서 정의한 서비스 이름
+        'PORT': '5432',
+    }
+}
+```
+
+* **`HOST='db'`**:
+* Docker Compose에서 PostgreSQL 컨테이너 이름을 `db`로 지정할 것이므로 이렇게 설정
+* 로컬 개발 시에는 `localhost`로 바꿔도 됨
+
+2. PostgreSQL이 설치된 상태에서 로컬 테스트
+
+```sh
+# PostgreSQL 컨테이너 실행
+docker run --name test-postgres -e POSTGRES_DB=mydatabase -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -p 5432:5432 -d postgres
+
+# Django 마이그레이션 실행
+python manage.py migrate
+
+```
+
+* PostgreSQL에서 마이그레이션이 정상적으로 적용되는지 확인
+* 테스트 끝나면 컨테이너 삭제 가능. (`docker stop test-postgres && docker rm test-postgres`)
+
+3. Dockerfile & `docker-compose.yml` 작성
+
+* `dockerfile`&#x20;
+
+```docker
+# Python 기반 Django 컨테이너 생성
+FROM python:3.9
+
+# 작업 디렉토리 설정
+WORKDIR /app
+
+# 필요한 파일 복사
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY . .
+
+# 데이터베이스 마이그레이션 후 서버 실행
+CMD ["sh", "-c", "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]
+```
+
+
+
+* `dockerfile`&#x20;
+
+```python
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: my_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    container_name: django_app
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://myuser:mypassword@db:5432/mydatabase
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+
+volumes:
+  postgres_data:
+```
+
+* `web` 서비스가 `db` 서비스(PostgreSQL 컨테이너)에 의존하도록 설정
+* Django가 실행될 때 자동으로 `migrate` 실행해서 DB 스키마 적용
+
+
+
+4. Docker Image 빌드 & 실행
+
+```sh
+# 1. Docker 이미지 빌드
+docker build -t my-django-app .
+
+# 2. Docker Compose로 실행
+docker-compose up -d
+```
+
+* `docker ps`로 Django와 PostgreSQL 컨테이너가 잘 실행되는지 확인
