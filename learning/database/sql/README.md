@@ -1,6 +1,6 @@
 ---
+icon: s
 description: Structured Query Language
-icon: database
 ---
 
 # SQL
