@@ -218,9 +218,9 @@ media/
 | `.gitignore`    | Git 저장소에 추적되지 않을 파일을 지정       | Git (커밋, 푸시할 때 적용)  |
 | `.dockerignore` | Docker 빌드 시 컨텍스트에서 제외할 파일을 지정 | `docker build` 컨텍스트 |
 
-### **dgidsd에 올리지는 않지만, Docker 빌드에는 필요한 파일이 있을 수 있음**
+### .gitignore & .dockerignore
 
-1.
+1. Git에 올리지는 않지만, Docker 빌드에는 필요한 파일이 있을 수 있음
    * 예: `Dockerfile`은 `.gitignore`에서 제외할 이유가 없지만, `.dockerignore`에서는 필요할 수도 있음.
 2. **Docker 빌드 시 불필요한 파일을 제외해야 속도가 빨라짐**
    * 예: `.git` 폴더는 Git에는 있어야 하지만, Docker 이미지에는 포함할 필요가 없음.
