@@ -136,9 +136,9 @@ docker rm [컨테이너 이름 또는 ID]
 
 ***
 
-<div align="left"><figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption><p>오류발생</p></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (1).png" alt="" width="563"><figcaption><p>오류발생</p></figcaption></figure></div>
 
-<div align="left"><figure><img src="../.gitbook/assets/image (1).png" alt="" width="563"><figcaption><p>image 생성</p></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption><p>image 생성</p></figcaption></figure></div>
 
 ***
 
@@ -227,6 +227,98 @@ media/
 3. **Git과 Docker가 다루는 파일의 범위가 다름**
    * `.gitignore`: 개발 중 불필요한 파일이나 캐시를 커밋에서 제외 (예: `__pycache__/`)
    * `.dockerignore`: Docker 빌드 시 컨테이너에 포함되지 않아야 하는 파일 제외 (예: `venv/`)
+
+***
+
+### Docker Compose
+
+
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+* 복잡한 어플리케이션 관리
+  * 어플리케이션이 **여러 서비스**로 구성된 경우
+    * ex) django, PostgreSQL
+* 의존성 관리
+  * 각 서비스 간 **의존성** 설정해야 하는 경우
+    * ex)Django가 PostgreSQL 데이터베이스에 연결
+
+
+
+핵심개념
+
+* `docker-compose.yml` 파일
+  * YAML 형식으로 작성되며, 여러 컨테이너의 설정(이미지, 네트워크, 볼륨 등)을 정의
+* 서비스 (Services)
+  * 컨테이너의 논리적 단위
+    * ex) `web`서비스는 Django 애플리케이션, `db`서비스는 PostgreSQL 데이터베이스
+* 네트워크 (Networks)
+  * Docker Compose는 자동으로 각 서비스 간의 통신을 위한 네트워크를 생성
+    * ex) `web`서비스에서 `db`서비스를 이름으로 호출 가능
+* Docker Volumes
+* **Docker Volumes는** **컨테이너 내부 데이터가 영구적으로 유지되도록 저장하는 방식**
+  * 컨테이너는 기본적으로 휘발성
+  * `docker run`으로 실행한 컨테이너는 삭제되면 내부 데이터도 사라짐
+  * 하지만 데이터베이스 같은 서비스는 컨테이너가 사라져도 데이터가 유지되어야 함
+* 호스트와 컨테이너 간 데이터 공유
+  * 컨테이너 내부 데이터를 **호스트(로컬 시스템)에도 저장**할 수 있음
+    * 이를 통해 개발 환경에서 데이터를 유지하면서 컨테이너를 여러 번 재시작 가능
+* 여러 컨테이너 간 데이터 공유
+  * 같은 볼륨을 여러 개의 컨테이너가 접근할 수 있음
+  * 예를 들어, Nginx 컨테이너와 Django 컨테이너가 같은 정적 파일을 공유할 수 있음
+
+
+
+* `docker-compose.yml`&#x20;
+
+```yaml
+version: '3.8' # Docker Compose 파일의 형식 버전 (최신 버전)
+
+services:       # 여러 컨테이너 서비스를 정의하는 섹션
+  web:          # Django 애플리케이션 서비스 정의
+    build:  # 이미지 관련된 설정
+      context: .  # Dockerfile이 위치한 디렉토리 (현재 디렉토리)
+    ports:
+      - "8000:8000"  # 호스트와 컨테이너의 포트를 매핑 (로컬 8000 → 컨테이너 8000)
+    volumes:
+      - ./myapp:/myapp  # 로컬의 myproject 디렉토리를 컨테이너의 /myapp과 동기화
+    environment:           # Django 환경 변수 설정
+      - DJANGO_SETTINGS_MODULE=myapp.settings
+      - DATABASE_URL=postgres://postgres:password@db:5432/postgres
+      # 주소 주석 추가       # id:postgress password:password
+    depends_on:
+      - db  # db 서비스가 시작된 후 실행
+
+  db:           # PostgreSQL 서비스 정의
+    image: postgres:13  # PostgreSQL 공식 이미지 사용 (버전 13)
+    volumes:
+      - db_data:/var/lib/postgresql/data  # PostgreSQL 데이터를 영구적으로 저장
+    environment:             # PostgreSQL 초기 사용자, 비밀번호, 데이터베이스 설정
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postgres
+
+volumes:
+  db_data:       # PostgreSQL 데이터 저장소를 위한 Docker Volume 정의
+		 # 컨테이너 간 데이터 공유 또는 컨테이너가 삭제되어도 데이터 유지
+```
+
+* database local 설치
+
+1. database 설치
+2. database를 사용할 user 생성 (id, password)
+3. database 생성
+4. table 생성
+
+***
+
+### docker compose 실행
+
+```shell
+docker compose up
+```
+
+
 
 
 
