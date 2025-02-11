@@ -45,11 +45,11 @@ def index(request):
 * **view의 context**로 넘긴 데이터를 변수로로 접근할 수 있음
 * 변수에 어떠한 작업을 추가적으로 더해 수정하고 싶을 때 사용
 * `.` 을 사용하여 변수의 속성 값에 접근 가능
-*   `render()` 의 세번째 인자인 context에 `dict` 형태로 넘겨진 데이터 중
+*   `**render()` 의 세 번째 인자인 **context**에 \*\*`dictionary` 형태로 넘겨진 데이터 중
 
-    `key` 값이 template에서 사용 가능한 변수가 됨
+    `**key` 값이 template에서 사용 가능한 변수가 됨
 
-    * render(request, template, context)
+    * **render(request, template, context)**
 
     \
 
@@ -58,16 +58,16 @@ def index(request):
 
 <div align="left"><figure><img src="../../../.gitbook/assets/image (62).png" alt="" width="221"><figcaption><p>.으로 속성값에 접근</p></figcaption></figure></div>
 
-2. 필터 (Filters)
+2. **필터 (Filters)**
 
 ```python
 {{ variable|filter }}
 ```
 
-* 변수에 작업을 추가적으로 더해 수정하고 싶을때 사용
+* 변수에 작업을 추가적으로 더해 수정하고 싶을 때 사용
 * 약 60개의 built-in template filter가 제공되며 일부 필터는 인자를 받기도 함
 * 필터 사용 예시
-  * view에서 넘겨준 데이터는 Aiden Lim 이런식이지만 보여줄때는 소문자로 보이게 하고 싶다면
+  * view에서 넘겨준 데이터를  소문자로 보이게 하고 싶다면
 
 ```python
 {{ first_name|lower }}

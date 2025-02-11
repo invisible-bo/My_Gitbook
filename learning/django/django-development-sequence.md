@@ -15,7 +15,7 @@ python manage.py startapp app_name
 
 ***
 
-2. 모델(Model) 설계
+2. **모델(Model)** 설계
 
 * 데이터베이스에 저장할 구조를 정의
 * 예: `models.py`에서 테이블 정의
@@ -105,7 +105,7 @@ def example_create(request):
 
 ***
 
-4. 뷰(View) 작성
+4. **뷰(View)** 작성
 
 * `views.py`에 Form을 처리하는 로직 작성
 * 예: 특정 데이터를 가져오는 함수형 뷰
@@ -121,7 +121,7 @@ def example_view(request):
 
 ***
 
-5. 템플릿(Template) 작성
+5. **템플릿(Template)** 작성
 
 * HTML 템플릿 작성
   * `app_name/templates/app_name/example.html`에 HTML 파일 생성
@@ -139,7 +139,7 @@ def example_view(request):
 
 ***
 
-6. URL 설정
+6. **URL** 설정
 
 * 프로젝트 레벨 `urls.py`와 앱 레벨 `urls.py`에서 URL 매핑 설정
 * app\_name/urls.py
