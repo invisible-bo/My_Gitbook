@@ -90,7 +90,7 @@
     * [Git collaboration](learning/git-and-github/git-collaboration/README.md)
       * [Gitmoji](learning/git-and-github/git-collaboration/gitmoji.md)
     * [Useful related services](learning/git-and-github/useful-related-services.md)
-  * [SQL](learning/sql.md)
   * [Docker](learning/docker.md)
+  * [SQL](learning/sql.md)
   * [Virtual Environment & Package](learning/virtual-environment.md)
   * [Backend-Frontend Collaboration](learning/backend-frontend-collaboration.md)

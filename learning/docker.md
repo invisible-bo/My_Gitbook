@@ -70,7 +70,7 @@ CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 ```shell
 docker build -t [이미지 이름]:[태그] [Dockerfile 경로]
 # ex)
-docker build -t myapp:1.0 .
+docker build -t qhrms111/book_app:v1.0.0 .
 ```
 
 * image 확인
@@ -79,9 +79,9 @@ docker build -t myapp:1.0 .
 # 생성된 이미지 확인
 docker images
 # ex)
-REPOSITORY          TAG       IMAGE ID       CREATED         SIZE
-myapp               1.0       a1b2c3d4e5f6   5 minutes ago   123MB
-python              3.10-slim d1e2f3g4h5i6   2 days ago      23MB
+REPOSITORY          TAG       IMAGE ID       CREATED          SIZE
+qhrms111/book_app   v1.0.0    1dd181fe2fa3   35 seconds ago   807MB
+book_app            latest    8f2b241a7367   10 hours ago     807MB
 ```
 
 * image 삭제
@@ -110,6 +110,7 @@ docker run myapp:1.0
 
 ```shell
 docker run -d -p 8000:8000 myapp:1.0
+# -d 옵션 백그라운드실행
 ```
 
 * 실행중인 container 확인
@@ -133,27 +134,99 @@ docker rm [컨테이너 이름 또는 ID]
 
 
 
-
-
-
-
-
+***
 
 <div align="left"><figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption><p>오류발생</p></figcaption></figure></div>
 
 <div align="left"><figure><img src="../.gitbook/assets/image (1).png" alt="" width="563"><figcaption><p>image 생성</p></figcaption></figure></div>
 
+***
 
+### Push to Docker Hub
 
+* login
 
+```shell
+docker login
+```
 
+* image tag settings
 
+```shell
+docker tag [이미지 이름]:[태그] [도커 허브 사용자 이름]/[이미지 이름]:[태그]
+# ex)
+docker tag book_app qhrms111/book_app
+```
 
+* image push
 
+```shell
+docker push [도커 허브 사용자 이름]/[이미지 이름]:[태그]
+# ex)
+docker push qhrms111/book_app:v1.0.0
+```
 
+* code 수정 후 version number를  달리 한 뒤 push
 
+***
 
+* `.dockerignore` &#x20;
+  * ex)
 
+```
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Git
+.git/
+.gitignore
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker
+.dockerignore
+Dockerfile~
+
+# Logs & Build
+logs/
+*.log
+*.out
+*.err
+
+# Django
+db.sqlite3
+staticfiles/
+media/
+**/migrations/*
+!**/migrations/__init__.py
+```
+
+* 빌드 속도 향상
+* 보안
+* 이크기 감소
+
+| 파일              | 역할                            | 적용 대상               |
+| --------------- | ----------------------------- | ------------------- |
+| `.gitignore`    | Git 저장소에 추적되지 않을 파일을 지정       | Git (커밋, 푸시할 때 적용)  |
+| `.dockerignore` | Docker 빌드 시 컨텍스트에서 제외할 파일을 지정 | `docker build` 컨텍스트 |
+
+### **dgidsd에 올리지는 않지만, Docker 빌드에는 필요한 파일이 있을 수 있음**
+
+1.
+   * 예: `Dockerfile`은 `.gitignore`에서 제외할 이유가 없지만, `.dockerignore`에서는 필요할 수도 있음.
+2. **Docker 빌드 시 불필요한 파일을 제외해야 속도가 빨라짐**
+   * 예: `.git` 폴더는 Git에는 있어야 하지만, Docker 이미지에는 포함할 필요가 없음.
+3. **Git과 Docker가 다루는 파일의 범위가 다름**
+   * `.gitignore`: 개발 중 불필요한 파일이나 캐시를 커밋에서 제외 (예: `__pycache__/`)
+   * `.dockerignore`: Docker 빌드 시 컨테이너에 포함되지 않아야 하는 파일 제외 (예: `venv/`)
 
 
 
