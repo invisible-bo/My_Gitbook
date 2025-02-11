@@ -217,7 +217,7 @@ media/
 
 * 빌드 속도 향상
 * 보안
-* 이크기 감소
+* image 크기 감소
 
 | 파일              | 역할                            | 적용 대상               |
 | --------------- | ----------------------------- | ------------------- |
@@ -345,12 +345,11 @@ project-repo/
 ```sh
 git pull
 docker-compose up --build -d  # Dockerfile 기반으로 직접 빌드 후 실행
-
 ```
 
 
 
-2. Docker Hub 또는 사설 Registry에 푸시해서 공유
+### 2. \*\*Docker Hub 또는 사설 Registry에 push해서 공유(추천 방식)\*\*
 
 * image build후 Docker Hub에 push
 
@@ -379,6 +378,8 @@ git add docker-compose.yml
 git commit -m "Add docker-compose.yml"
 git push origin main
 ```
+
+***
 
 
 
