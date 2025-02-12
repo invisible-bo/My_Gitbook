@@ -502,3 +502,7 @@ docker-compose up -d
 ```
 
 * `docker ps`로 Django와 PostgreSQL 컨테이너가 잘 실행되는지 확인
+
+***
+
+<div align="left"><figure><img src="../.gitbook/assets/image (83).png" alt="" width="563"><figcaption></figcaption></figure></div>
