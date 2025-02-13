@@ -30,6 +30,7 @@
       * [Prompt Engineering](learning/llm/prompt-engineering/README.md)
         * [About prompt](learning/llm/prompt-engineering/about-prompt.md)
         * [ChatGPT & Prompt engineering](learning/llm/prompt-engineering/chatgpt-and-prompt-engineering.md)
+      * [Ollama](learning/ai/llm/ollama.md)
       * [Langchain](learning/ai/llm/langchain.md)
       * [\*LLM GPT example](learning/llm/llm-gpt-example.md)
       * [\*LLM Llama2 example](learning/llm/llm-llama2-example.md)
