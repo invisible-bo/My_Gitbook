@@ -32,7 +32,13 @@ icon: link-horizontal
 * **코드 생성 및 실행** (예: AI 기반 코드 자동화)
 * **LLM 기반 검색** (예: RAG, 벡터DB 활용)
 
+ex)
 
+```python
+from langchain.chat_models import ChatOpenAI
+
+llm = ChatOpenAI(model="gpt-4", temperature=0.7)
+```
 
 
 
