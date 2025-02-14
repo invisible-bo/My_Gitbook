@@ -2,7 +2,7 @@
 description: JS data types, variable
 ---
 
-# Data types & Variable
+# Data types & Variable & Operators
 
 ### JS Data type
 
@@ -38,6 +38,56 @@ description: JS data types, variable
   * 띄어쓰기 사용 불가
   * JS 예약어 사용 불가
     * [JS 예약어 목록 (W3Schools)](https://w3schools.com/js/js_reserved.asp)
+
+### 변수 이름 convention
+
+**1) `camelCase` (카멜 케이스)**
+
+* 단어를 이어 붙이고 첫 단어는 소문자, 이후 단어는 대문자로 시작
+* 대부분의 변수, 함수에서 사용됨
+
+```javascript
+let userName = "Johnny";
+let totalScore = 100;
+```
+
+**2) `PascalCase` (파스칼 케이스, 클래스/생성자에서 사용)**
+
+* 모든 단어를 대문자로 시작
+* 주로 클래스나 생성자 함수에서 사용
+
+```javascript
+class UserProfile {}
+function CreateUser() {}  // 생성자 함수
+```
+
+**3) `UPPER_SNAKE_CASE` (대문자 + 언더스코어, 상수에서 사용)**
+
+* 변하지 않는 값(상수)에는 `UPPER_SNAKE_CASE`를 사용
+
+```javascript
+const MAX_USERS = 500;
+const API_KEY = "abc123";
+```
+
+4\) **`is`, `has`, `can`, `should` 접두어 활용 (불리언 값)**
+
+* `true` / `false` 값을 담는 변수는 `is`, `has`, `can`, `should` 같은 접두어를 붙이면 좋음
+
+```javascript
+let isAdmin = false;
+let hasPermission = true;
+let canDeletePost = false;
+```
+
+5\) **`get`, `set`, `fetch`, `load` 같은 동작 기반 네이밍**
+
+* 변수는 명사, 함수는 동사를 쓰는 게 좋음
+
+```javascript
+let userData = {};         // ✅ 변수는 명사
+function getUserData() {}  // ✅ 함수는 동사 + 명사 조합
+```
 
 
 
