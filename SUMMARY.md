@@ -60,6 +60,7 @@
         * [Positioning Rules](learning/web/web-page/css/positioning-rules.md)
       * [JavaScript](learning/web/web-page/javascript/README.md)
         * [Data types & Variable & Operators](learning/web/web-page/javascript/data-types-and-variable-and-operators.md)
+        * [JS Loop](learning/web/web-page/javascript/js-loop.md)
       * [UX / UI](learning/web/web-page/ux-ui.md)
       * [React.js](learning/web/web-page/react.js.md)
     * [Streamlit](learning/web/streamlit.md)
