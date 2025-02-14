@@ -39,21 +39,145 @@ description: JS data types, variable
   * JS 예약어 사용 불가
     * [JS 예약어 목록 (W3Schools)](https://w3schools.com/js/js_reserved.asp)
 
-### Arithmetic (산술 연산자)
 
-* 사칙연산 연산자. 숫자가 결과로 나옴
-  * 덧셈: +, ++
-  * 뺄셈: -, --
-  * 곱셈: \*
-  * 나눗셈: /
-  * 나머지: %
-  * 복합 연산: +=(덧셈), -=(뺄셈), \*=(곱셈), /=(나눗셈)
+
+***
+
+### Arithmetic Operators(산술 연산자)
+
+| 연산자  | 설명     | 예제               | 결과    |
+| ---- | ------ | ---------------- | ----- |
+| `+`  | 덧셈     | `5 + 3`          | `8`   |
+| `-`  | 뺄셈     | `5 - 3`          | `2`   |
+| `*`  | 곱셈     | `5 * 3`          | `15`  |
+| `/`  | 나눗셈    | `5 / 2`          | `2.5` |
+| `%`  | 나머지    | `5 % 2`          | `1`   |
+| `**` | 거듭제곱   | `2 ** 3`         | `8`   |
+| `++` | 증가 연산자 | `let a = 5; a++` | `6`   |
+| `--` | 감소 연산자 | `let a = 5; a--` | `4`   |
+
+```javascript
+let a = 5;
+console.log(a++); // 5 (후위: 먼저 출력 후 증가)
+console.log(a);   // 6
+
+let b = 5;
+console.log(++b); // 6 (전위: 먼저 증가 후 출력)
+```
+
+***
+
+### Assignment Operators(할당 연산자)
+
+| 연산자   | 설명        | 예제           | 결과           |
+| ----- | --------- | ------------ | ------------ |
+| `=`   | 값 할당      | `let x = 10` | `x = 10`     |
+| `+=`  | 덧셈 후 할당   | `x += 5`     | `x = x + 5`  |
+| `-=`  | 뺄셈 후 할당   | `x -= 3`     | `x = x - 3`  |
+| `*=`  | 곱셈 후 할당   | `x *= 2`     | `x = x * 2`  |
+| `/=`  | 나눗셈 후 할당  | `x /= 2`     | `x = x / 2`  |
+| `%=`  | 나머지 후 할당  | `x %= 3`     | `x = x % 3`  |
+| `**=` | 거듭제곱 후 할당 | `x **= 2`    | `x = x ** 2` |
+
+```javascript
+let x = 10;
+x += 5;  // x = 15
+x *= 2;  // x = 30
+```
+
+***
+
+### Comparison Operators(비교 연산자)
+
+| 연산자   | 설명                 | 예제          | 결과      |
+| ----- | ------------------ | ----------- | ------- |
+| `==`  | 동등 비교 (타입 변환 O)    | `5 == "5"`  | `true`  |
+| `===` | 엄격 동등 비교 (타입 변환 X) | `5 === "5"` | `false` |
+| `!=`  | 부등 비교              | `5 != "5"`  | `false` |
+| `!==` | 엄격 부등 비교           | `5 !== "5"` | `true`  |
+| `>`   | 초과                 | `5 > 3`     | `true`  |
+| `<`   | 미만                 | `5 < 3`     | `false` |
+| `>=`  | 이상                 | `5 >= 5`    | `true`  |
+| `<=`  | 이하                 | `5 <= 3`    | `false` |
+
+```javascript
+console.log(5 == "5");  // true (자동 형 변환)
+console.log(5 === "5"); // false (타입이 다름)
+```
 
 
 
 ***
 
+### Logical Operators(논리 연산자)
 
+| 연산자  | 설명     | 예제              | 결과      |
+| ---- | ------ | --------------- | ------- |
+| `&&` | 논리 AND | `true && false` | `false` |
+| \`   |        | \`              | 논리 OR   |
+| `!`  | 논리 NOT | `!true`         | `false` |
+
+```javascript
+console.log(true && false); // false
+console.log(true || false); // true
+console.log(!true);         // false
+```
+
+***
+
+### Bitwise Operators(비트 연산자)
+
+| 연산자   | 설명            | 예제         | 결과           |
+| ----- | ------------- | ---------- | ------------ |
+| `&`   | AND           | `5 & 1`    | `1`          |
+| \`    | \`            | OR         | \`5          |
+| `^`   | XOR           | `5 ^ 1`    | `4`          |
+| `~`   | NOT           | `~5`       | `-6`         |
+| `<<`  | 왼쪽 시프트        | `5 << 1`   | `10`         |
+| `>>`  | 오른쪽 시프트       | `5 >> 1`   | `2`          |
+| `>>>` | 부호 없는 오른쪽 시프트 | `-5 >>> 1` | `2147483645` |
+
+```javascript
+console.log(5 & 1);  // 1
+console.log(5 | 1);  // 5
+console.log(5 ^ 1);  // 4
+console.log(~5);     // -6
+console.log(5 << 1); // 10
+console.log(5 >> 1); // 2
+```
+
+***
+
+### Ternary Operators(삼항 연산자)&#x20;
+
+* 조건에 따라 값을 선택할 때 사용. `if-else`를 한 줄로 축약 가능
+
+```javascript
+let age = 20;
+let result = age >= 18 ? "성인" : "미성년자";
+console.log(result); // "성인"
+```
+
+
+
+***
+
+### Type Operators(타입 연산자)
+
+| 연산자          | 설명               | 예제                    | 결과         |
+| ------------ | ---------------- | --------------------- | ---------- |
+| `typeof`     | 데이터 타입 확인        | `typeof 123`          | `"number"` |
+| `instanceof` | 특정 클래스 인스턴스인지 확인 | `[] instanceof Array` | `true`     |
+
+```javascript
+console.log(typeof "Hello");  // "string"
+console.log(typeof 42);       // "number"
+console.log(typeof true);     // "boolean"
+console.log(typeof {});       // "object"
+console.log(typeof null);     // "object" (버그, 원래는 null이어야 함)
+console.log(typeof undefined); // "undefined"
+console.log([] instanceof Array); // true
+```
 
 
 
