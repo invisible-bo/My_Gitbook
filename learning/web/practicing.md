@@ -66,9 +66,16 @@ npm install axios
 VITE_API_URL=http://localhost:8000/api
 ```
 
+***
+
+`main.jsx`에 `BrowserRouter` 적용
 
 
 
+**`index.html`**: 시작점 (빈 화면 + #root)\
+&#xNAN;**`main.jsx`**: React 엔진 시동 (App.jsx를 #root에 넣음)\
+&#xNAN;**`App.jsx`**: 화면 전체의 “뼈대”와 페이지 라우팅\
+&#xNAN;**`components/`** **`pages/`**: 각각의 화면 구성 요소
 
 
 
