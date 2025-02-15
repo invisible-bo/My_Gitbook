@@ -65,6 +65,7 @@
       * [UX / UI](learning/web/web-page/ux-ui.md)
       * [React.js](learning/web/web-page/react.js.md)
     * [Streamlit](learning/web/streamlit.md)
+    * [\*\*practicing](learning/web/practicing.md)
   * [Django](learning/django/README.md)
     * [MTV pattern](learning/django/mtv-pattern/README.md)
       * [APP](learning/django/mtv-pattern/app.md)
