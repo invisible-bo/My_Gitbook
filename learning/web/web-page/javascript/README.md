@@ -38,6 +38,8 @@ description: object(객체) 기반의 script 언어. web문서에서 사용자�
 
 
 
+
+
 ```html
 <script>
 </script>
@@ -47,3 +49,25 @@ description: object(객체) 기반의 script 언어. web문서에서 사용자�
 /* 한줄 이상 긴 주석 */
 // 한줄 주석
 ```
+
+
+
+***
+
+#### 🚀 ES5 vs ES6 비교
+
+| 구분           | ES5                        | ES6                                 |
+| ------------ | -------------------------- | ----------------------------------- |
+| **변수 선언**    | `var`                      | `let`, `const`                      |
+| **함수**       | `function() {}`            | 화살표 함수 `() => {}`                   |
+| **문자열**      | `"Hello " + name`          | `Hello ${name}` (템플릿 리터럴)           |
+| **클래스**      | 프로토타입 기반                   | `class` 문법 도입                       |
+| **모듈 시스템**   | 지원 없음 (`require()` 같은 비표준) | `import/export` 문법 도입               |
+| **비동기 처리**   | 콜백 지옥 (`callback`)         | `Promise`, 이후 `async/await` 지원      |
+| **배열 메서드**   | `forEach`, `map`, `filter` | `for...of`, 스프레드 문법 (`...arr`)      |
+| **구조 분해 할당** | 없음                         | `[a, b] = [1, 2];`, `{name} = obj;` |
+
+
+
+
+
