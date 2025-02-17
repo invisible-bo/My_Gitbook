@@ -66,6 +66,7 @@
       * [React.js + Vite](learning/web/web-page/react.js-+-vite.md)
     * [Streamlit](learning/web/streamlit.md)
     * [\*\*practicing](learning/web/practicing.md)
+    * [Axios](learning/web/axios.md)
   * [Django](learning/django/README.md)
     * [MTV pattern](learning/django/mtv-pattern/README.md)
       * [APP](learning/django/mtv-pattern/app.md)
