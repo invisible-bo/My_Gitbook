@@ -1,6 +1,0 @@
----
-icon: react
----
-
-# React.js
-

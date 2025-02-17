@@ -63,7 +63,7 @@
         * [JS Loop](learning/web/web-page/javascript/js-loop.md)
         * [JS function](learning/web/web-page/javascript/js-function.md)
       * [UX / UI](learning/web/web-page/ux-ui.md)
-      * [React.js](learning/web/web-page/react.js.md)
+      * [React.js + Vite](learning/web/web-page/react.js-+-vite.md)
     * [Streamlit](learning/web/streamlit.md)
     * [\*\*practicing](learning/web/practicing.md)
   * [Django](learning/django/README.md)
