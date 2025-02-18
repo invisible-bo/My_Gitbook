@@ -2,32 +2,59 @@
 
 ### Axios
 
-* **Axios:** Promise 기반 **HTTP 클라이언트**
+* **Axios:** Promise 기반 JavaScript **HTTP 클라이언트**
+  * **`Promise`는 비동기 작업의 완료 또는 실패를 나타내는 객체** \
+    &#xNAN;**"나중에 결과를 줄 테니 기다려" 라는 약속**
+  *   | **`pending` (대기)** | 작업이 아직 끝나지 않음 (초기 상태) |
+      | ------------------ | --------------------- |
+
+      | **`fulfilled` (성공)** | 작업이 성공적으로 완료됨 → `.then()` 실행 |
+      | -------------------- | ---------------------------- |
+
+      | **`rejected` (실패)** | 작업이 실패함 → `.catch()` 실행 |
+      | ------------------- | ----------------------- |
+* 주로 **API 요청, 데이터 전송, 크롤링** 등에 사용
 * **요청(Request):** API, 서버에 데이터 요구
 * **응답(Response):** 데이터 받아와서 처리
+* **간단한 문법:** `fetch`보다 사용법이 직관적.
+* **Promise 기반:** `async/await`을 지원.
+* **자동 JSON 파싱:** 응답 데이터를 자동으로 `JSON`으로 처리.
+* **인터셉터:** 요청(Request)과 응답(Response)을 가로채서 공통 로직 처리 가능.
+* **에러 처리:** `HTTP Status Code`에 따른 에러 구분이 편리.
+* **요청 취소(Cancellation):** 불필요한 요청을 중단할 수 있음.
+* **타임아웃 및 재시도 설정:** API 호출 실패 시 재시도 및 타임아웃 처리 가능
 
 
 
-1. **프론트엔드에서 (React, Vue, Angular)**
-   * \*\*서버(API)\*\*와 \*\*프론트(UI)\*\*를 연결하는 브릿지
-   * `GET`, `POST`, `PUT`, `DELETE`로 **API 통신**
-   * **CORS 설정**, **JWT 토큰** 쉽게 추가
+* Axios 설치
 
-```javascript
-// React + Axios 예제 (프론트엔드)
-import axios from 'axios';
-
-async function getBooks(keyword) {
-  try {
-    const response = await axios.get(`http://localhost:8000/api/books/`, {
-      params: { keyword },
-    });
-    console.log(response.data);
-  } catch (error) {
-    console.error('Error fetching books:', error);
-  }
-}
+```bash
+npm install axios
 ```
+
+**프론트엔드에서 (React, Vue, Angular)**
+
+* \*\*서버(API)\*\*와 \*\*프론트(UI)\*\*를 연결하는 브릿지
+* `GET`, `POST`, `PUT`, `DELETE`로 **API 통신**
+* **CORS 설정**, **JWT 토큰** 쉽게 추가
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***
 
 **프론트 Axios 특징:**
 
@@ -35,9 +62,7 @@ async function getBooks(keyword) {
 * **JWT 토큰, 쿠키 자동 처리**
 * **UI 반영** 빠름
 
-
-
-#### **2️. 백엔드(Django, Node.js)에서도 사용 가능!**
+#### **백엔드(Django, Node.js)에서도 사용 가능**
 
 **"Axios는 백엔드에서도 똑같이 쓴다."**
 
@@ -45,34 +70,15 @@ async function getBooks(keyword) {
 * **OpenAI, 카카오 API 통신**
 * **크론 잡(Cron job) 자동화 작업**
 
-```javascript
-// Node.js + Axios 예제 (백엔드)
-const axios = require('axios');
-
-async function fetchFromOpenAI(prompt) {
-  try {
-    const response = await axios.post('https://api.openai.com/v1/completions', {
-      prompt: prompt,
-      max_tokens: 100,
-    }, {
-      headers: {
-        'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
-      }
-    });
-    return response.data.choices[0].text;
-  } catch (error) {
-    console.error('OpenAI API Error:', error);
-  }
-}
-```
-
 **백엔드 Axios 특징:**
 
 * **외부 API와 통신 (OpenAI, 카카오, 네이버)**
 * **서버 간 데이터 파이프라인 연결**
 * **비동기 처리 + 빠른 병렬 요청**
 
-## 프론트엔드(React/Vue) vs 백엔드(Node.js/Django)에서 Axios 사용 비교
+## 프론트엔드(React/Vue) vs 백엔드(Node.js/Django)에서&#x20;
+
+## Axios 사용 비교
 
 | 구분          | 프론트엔드 (React/Vue) | 백엔드 (Node.js/Django)  |
 | ----------- | ----------------- | --------------------- |
