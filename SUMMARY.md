@@ -67,6 +67,7 @@
     * [Streamlit](learning/web/streamlit.md)
     * [\*\*practicing](learning/web/practicing.md)
     * [Axios](learning/web/axios.md)
+    * [UX/UI](learning/web/ux-ui.md)
   * [Django](learning/django/README.md)
     * [MTV pattern](learning/django/mtv-pattern/README.md)
       * [APP](learning/django/mtv-pattern/app.md)
