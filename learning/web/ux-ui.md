@@ -12,7 +12,7 @@ icon: face-shush
 
 ### Degisn Process
 
-<div align="left"><figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ### difference between UI design and UX design
 
