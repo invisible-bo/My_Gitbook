@@ -1,6 +1,0 @@
----
-icon: signal-stream
----
-
-# Streamlit
-

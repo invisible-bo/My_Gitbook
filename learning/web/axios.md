@@ -23,6 +23,7 @@
 * **에러 처리:** `HTTP Status Code`에 따른 에러 구분이 편리.
 * **요청 취소(Cancellation):** 불필요한 요청을 중단할 수 있음.
 * **타임아웃 및 재시도 설정:** API 호출 실패 시 재시도 및 타임아웃 처리 가능
+* :fire:JavaScript/Node.js 전용 라이브러리
 
 
 
