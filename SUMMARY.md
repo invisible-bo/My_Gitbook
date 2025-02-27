@@ -64,7 +64,7 @@
         * [JS function](learning/web/web-page/javascript/js-function.md)
       * [Basic Frontend Project](learning/web/web-page/basic-frontend-project.md)
       * [React.js + Vite](learning/web/web-page/react.js-+-vite.md)
-      * [UX/UI](learning/web/web-page/ux-ui.md)
+      * [UX/UI](learning/web/ux-ui.md)
     * [\*\*practicing](learning/web/practicing.md)
     * [Axios](learning/web/axios.md)
   * [Django](learning/django/README.md)

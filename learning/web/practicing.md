@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-<div align="left"><figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ***
 
