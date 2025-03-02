@@ -22,7 +22,7 @@ $ npm i && npm start
 * `npm start` → `package.json`에 정의된 `"start"` 스크립트를 실행
   * 보통 `electron .` 명령어가 실행되어 **Electron 앱이 실행됨**
 
-<div align="left"><figure><img src="../.gitbook/assets/image (85).png" alt="" width="375"><figcaption><p>초기 실행 화면</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (85).png" alt="" width="375"><figcaption><p>초기 실행 화면</p></figcaption></figure></div>
 
 ***
 
@@ -245,7 +245,7 @@ npm run dist
   `dist/` 폴더에 있는 `.exe`, `.dmg`, `.AppImage` 파일을 직접 공유
 * **자체 웹사이트에서 다운로드 링크 제공**
 
-<div align="left"><figure><img src="../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure></div>
 
 
 
