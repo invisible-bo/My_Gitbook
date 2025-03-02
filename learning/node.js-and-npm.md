@@ -1,3 +1,7 @@
+---
+icon: node
+---
+
 # Node.js & NPM
 
 ### Node.js
