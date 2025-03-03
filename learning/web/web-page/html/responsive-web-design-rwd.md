@@ -11,7 +11,7 @@ description: 반응형 web
 * 화면에 보여지고 있는 영역. 기기별로 다르다
 * HTML로 개발시 meta tag로 viewport설정
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -21,7 +21,7 @@ description: 반응형 web
 
 * em은 부모 요소의 글꼴 크기, rem은 루트 요소의 글꼴 크기
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="365"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="" width="365"><figcaption></figcaption></figure></div>
 
 * htmml 글꼴 크기 기본 16px\
   2rem=32px\

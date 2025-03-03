@@ -385,7 +385,7 @@ plt.ylabel('Distance')
 plt.show()
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 #### **덴드로그램의 구성**
@@ -443,7 +443,7 @@ plt.legend(title='Cluster')
 plt.show()
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```python
 # 계층적 군집화 결과에 대한 실루엣 점수 계산

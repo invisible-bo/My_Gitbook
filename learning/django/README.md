@@ -1,6 +1,6 @@
 ---
-description: Django Framework
 icon: user-bounty-hunter
+description: Django Framework
 ---
 
 # Django
@@ -55,7 +55,7 @@ django-admin startproject <project이름> <생성위치> # 생성위치 생략�
 django-admin startproject <project이름> . # 현재 폴더를 프로젝트 폴더로 사용해서 생성
 ```
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 * `settings.py` : project의 설정 관리
 * `urls.py` : 어떤 요청을 처리할지 결정하는 곳
