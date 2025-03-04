@@ -247,9 +247,33 @@ npm run dist
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure></div>
 
+***
 
+### Electron process 구조
 
+1. main process `main.js`&#x20;
 
+* Electron의 핵심 로직
+* 앱의 창(Window)을 생성하고 관리
+* 파일 시스템 접근, 네이티브 기능 호출, IPC 통신 처리
+* `BrowserWindow`를 통해 렌더러 프로세스를 실행
+
+2. renderer process `renderer.js`&#x20;
+
+* UI를 담당하는 프로세스 (HTML, CSS, JS 실행)
+* 사용자의 입력을 감지하고 화면을 업데이트
+* Electron의 `ipcRenderer`를 사용해 메인 프로세스와 통신
+* **기본적으로 브라우저 환경과 동일하게 동작 (단, 보안 설정에 따라 Node.js 기능 제한 가능)**
+
+3. `preload.js`&#x20;
+
+* `preload.js`는 "메인 프로세스(Main)와 렌더러 프로세스(Renderer) 사이의 보안 브릿지 역할
+* preload.js를 사용하면 보안을 유지하면서도 렌더러에서 메인 프로세스의 기능(Node.js API, Electron API 등)을 사용할 수 있게해줌
+  *   ### **`preload.js`가 필요한 이유**
+
+      **Electron에서는 보안을 강화하기 위해 `nodeIntegration: false`를 권장**\
+      하지만, `nodeIntegration: false`를 설정하면 렌더러에서 `require('electron')`을 직접 사용할 수 없음\
+      그래서 **렌더러에서 메인 프로세스 기능을 안전하게 사용할 수 있도록 `preload.js`가 필요**
 
 
 
