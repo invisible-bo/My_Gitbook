@@ -59,6 +59,7 @@
         * [CSS selector](learning/web/web-page/css/css-selector.md)
         * [Block & Spacing](learning/web/web-page/css/block-and-spacing.md)
         * [Positioning Rules](learning/web/web-page/css/positioning-rules.md)
+        * [\*Useful CSS effects](learning/web/web-page/css/useful-css-effects.md)
       * [JavaScript](learning/web/web-page/javascript/README.md)
         * [Data types & Variable & Operators](learning/web/web-page/javascript/data-types-and-variable-and-operators.md)
         * [JS Loop](learning/web/web-page/javascript/js-loop.md)
