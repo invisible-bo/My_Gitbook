@@ -2,7 +2,7 @@
 
 ### Kitty player
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 * Figma로 기본 design 완성
 
@@ -26,7 +26,7 @@
 
 builder.io plugin으로 기본 프레임만 html과 css로 따오고 버튼들은 이미지를 import해서 붙혀 보기로 함
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>어긋난 부분들이 발생해서 직접미세조정</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>어긋난 부분들이 발생해서 직접미세조정</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 

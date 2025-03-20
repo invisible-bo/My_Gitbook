@@ -14,3 +14,26 @@
 * **`transition-duration`** → 변형 지속 시간
 * **`transition-timing-function`** → 속도 변화 스타일 (`ease`, `linear`, `ease-in-out` 등)
 * **`transition-delay`** → 변형이 시작되기까지의 지연 시간
+
+
+
+### display: flex;
+
+* 가로로 편하게 배치 하기
+* 내가 가로로 배치하고 싶은 box들의 부모 box에 display: flex;
+* align-items: center;&#x20;
+* justify-content: center; 중앙 정렬
+* flex-direction: column; 세로 정렬
+
+<div align="left"><figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
+
+* box 사이를 띄울때 가상의 box를 넣고 flex-grow
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
