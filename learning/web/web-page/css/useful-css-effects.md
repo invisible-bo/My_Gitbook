@@ -1,5 +1,13 @@
 # \*Useful CSS effects
 
+body {\
+margin: 0;\
+}\
+div {\
+box-sizing: border-box;
+
+###
+
 ### transform
 
 * **`translate(x, y)`** → X, Y축으로 이동
