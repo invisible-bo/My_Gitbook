@@ -64,6 +64,7 @@
         * [Data types & Variable & Operators](learning/web/web-page/javascript/data-types-and-variable-and-operators.md)
         * [JS Loop](learning/web/web-page/javascript/js-loop.md)
         * [JS function](learning/web/web-page/javascript/js-function.md)
+        * [\*Useful JS](learning/web/web-page/javascript/useful-js.md)
       * [Basic Frontend Project](learning/web/web-page/basic-frontend-project.md)
       * [React.js + Vite](learning/web/web-page/react.js-+-vite.md)
       * [UX/UI](learning/web/ux-ui.md)
