@@ -35,13 +35,33 @@ document.getElementById('')
 * document.getElementById('target').hidden = true; // HTML5 속성
   * 요소 숨기기
 
+***
+
+```javascript
+getElementByClassName()
+
+ex)
+document.getElementsByClassName('navbar-toggler')[0].addEventListener('click', function(){
+    document.getElementsByClassName('list-group')[0].classList.toggle('show');
+});
+```
 
 
 
+```javascript
+querySelector()
+querySelectorAll()
 
+ex)
+document.getElementsByquerySelector('.navbar-toggler').addEventListener('click', function(){
+    document.getElementsByquerySelector('.list-group').classList.toggle('show');
+});
+// #써서 id가져오기 가능
 
-
-
+document.getElementsByquerySelectorAll('.navbar-toggler')[0].addEventListener('click', function(){
+    document.getElementsByquerySelectorAll('.list-group')[0].classList.toggle('show');
+});
+```
 
 
 
