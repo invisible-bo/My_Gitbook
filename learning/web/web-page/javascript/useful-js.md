@@ -63,6 +63,50 @@ document.getElementsByquerySelectorAll('.navbar-toggler')[0].addEventListener('c
 });
 ```
 
+***
+
+```css
+.black-bg {
+  display : none;
+}
+
+.show-modal {
+  display : block;
+}
+```
+
+
+
+```css
+.black-bg {
+  visibility : hidden;
+  opacity : 0;
+  transition : all 1s;
+}
+.show-modal {
+  visibility : visible;
+  opacity : 1;
+}
+```
+
+*   display : none을 주면 애니메이션이 잘 동작하지 않기 때문에
+
+    그거랑 비슷한 역할을 할 수 있는 visibility : hidden 을 사용
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
