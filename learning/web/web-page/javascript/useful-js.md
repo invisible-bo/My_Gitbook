@@ -93,7 +93,11 @@ document.getElementsByquerySelectorAll('.navbar-toggler')[0].addEventListener('c
 
     그거랑 비슷한 역할을 할 수 있는 visibility : hidden 을 사용
 
+***
 
+form html basic
+
+<figure><img src="../../../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
 
 
