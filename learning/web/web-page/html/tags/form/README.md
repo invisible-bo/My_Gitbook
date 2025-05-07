@@ -13,7 +13,7 @@ description: form tag
   * label : 입력 상자 마다 제목을 붙이는 tag
   * button : button tag
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1).png" alt="" width="563"><figcaption><p>있음 없음 부분 radio</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" width="563"><figcaption><p>있음 없음 부분 radio</p></figcaption></figure></div>
 
 주요 속성
 

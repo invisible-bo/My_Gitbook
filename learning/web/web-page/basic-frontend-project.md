@@ -135,12 +135,7 @@ button:hover {
 
 ***
 
-### .js files
 
-1. `include.js` - 공통 UI 자동 로드
-2. `auth.js` - 로그인 & 회원가입 처리
-3. `api.js` - API 요청
-4.
 
 
 

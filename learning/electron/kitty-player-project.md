@@ -2,7 +2,7 @@
 
 ### Kitty player
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 * Figma로 기본 design 완성
 
@@ -26,11 +26,11 @@
 
 builder.io plugin으로 기본 프레임만 html과 css로 따오고 버튼들은 이미지를 import해서 붙혀 보기로 함
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>어긋난 부분들이 발생해서 직접미세조정</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>어긋난 부분들이 발생해서 직접미세조정</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (4).png" alt="" width="244"><figcaption><p>playbar의 키티 버튼이 컨테이너 밖으로 자꾸 나가는 현상</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (4) (1).png" alt="" width="244"><figcaption><p>playbar의 키티 버튼이 컨테이너 밖으로 자꾸 나가는 현상</p></figcaption></figure></div>
 
 overflow를 hidden 으로 설정하자 버튼이 playbar내부에 가려지고 오른쪽 일정 부분 이상 이동이 안됨
 
@@ -42,7 +42,7 @@ seekbar position: absolute;로 playbar 내부에서 정확한 위치 설정
 
 
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (6).png" alt="" width="179"><figcaption><p>fixed</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (6) (1).png" alt="" width="179"><figcaption><p>fixed</p></figcaption></figure></div>
 
 ```django-html
 <input type="range" id="seekbar" min="0" value="0" step="1">

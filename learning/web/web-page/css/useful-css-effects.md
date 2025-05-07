@@ -33,7 +33,7 @@ box-sizing: border-box;
 * justify-content: center; 중앙 정렬
 * flex-direction: column; 세로 정렬
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
 
 * box 사이를 띄울때 가상의 box를 넣고 flex-grow
 
@@ -44,7 +44,7 @@ _align-items: center; /_ 가로 중앙 정렬 _/_\
 _height: 100vh; /_ 화면 높이 기준 중앙 정렬 _/_\
 _text-align: center; /_ 텍스트 중앙 정렬 \*/
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

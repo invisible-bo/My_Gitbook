@@ -11,7 +11,7 @@ icon: css3-alt
 * CSS는 이 구조를 **어떻게 보일지**를 지정
 * HTML 코드로 작성된 web요소들의 스타일과 레이아웃을 정의하는 style sheet언어
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" width="286"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt="" width="286"><figcaption></figcaption></figure></div>
 
 * 속성을 여러 개 지정 가능
 
