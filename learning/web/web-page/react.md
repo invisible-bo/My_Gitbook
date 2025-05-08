@@ -54,8 +54,17 @@ Vite (프랑스어로 '빠르다'는 뜻)
 * `npm run dev` : 개발 서버 실시간 확인
 * body { margin : 0 }  \
   div { box-sizing : border-box }
-  * css 깔끔하게 시작할때
+  * css 깔끔하게 시작할때. 전역 css파일에 설정(`index.css`)
+
+
+
+
+
 * 메인 개발 page : `app.jsx`
+
+`App.jsx → main.jsx → index.html(#root)` &#x20;
+
+* 단방향 데이터 흐름
 
 ***
 
@@ -68,6 +77,48 @@ Vite (프랑스어로 '빠르다'는 뜻)
 * inline style css
 
 <div align="left"><figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure></div>
+
+***
+
+### useState
+
+* **state에 데이터 바인딩**
+* state는 변동 사항이 생기면 state쓰는 html도 자동으로 재 렌더링 됨
+* UI 기능 개발이 매우 편리해지짐
+
+```jsx
+function App(){
+  let [글제목, b] = useState('남자 코트 추천');
+
+  return (
+    <h4>{ 글제목 }</h4>
+  )
+}
+```
+
+* **자주변경될 것 같은 데이터**들은 state에 저장했다가 html에 {데이터바인딩}&#x20;
+
+1\. 변경할 일이 없는 데이터들
+
+2\. 굳이 html에 표기가 필요없는 데이터들은 그냥 변수에 저장
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
